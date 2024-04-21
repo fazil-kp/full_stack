@@ -6,7 +6,7 @@ import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:nb_utils/nb_utils.dart';
-import '../../../view_model/todo_riverpod.dart';
+import '../../../view_model/riverpod.dart';
 
 class EmployeeViewTable extends ConsumerWidget {
   const EmployeeViewTable({super.key});

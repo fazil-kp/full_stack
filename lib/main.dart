@@ -6,17 +6,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'routes/project_routes.dart';
-import 'view_model/todo_riverpod.dart';
+import 'view_model/riverpod.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter(Const.hiveBox);
   HttpOverrides.global = MyHttpOverrides();
-  runApp(const ProviderScope(child: TodoApp()));
+  runApp(const ProviderScope(child: FullStack()));
 }
 
-class TodoApp extends ConsumerWidget {
-  const TodoApp({super.key});
+class FullStack extends ConsumerWidget {
+  const FullStack({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

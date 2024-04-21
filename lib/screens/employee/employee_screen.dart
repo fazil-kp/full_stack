@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-import '../../view_model/todo_riverpod.dart';
+import '../../view_model/riverpod.dart';
 import 'elements/employee_add_card.dart';
 import 'elements/employee_view_table.dart';
 

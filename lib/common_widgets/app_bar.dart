@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-import '../view_model/todo_riverpod.dart';
+import '../view_model/riverpod.dart';
 
 class CustomAppBar extends ConsumerWidget {
   final Widget? childWidget;
