@@ -16,7 +16,7 @@ class TestOne extends ConsumerWidget {
         children: [
           ElevatedButton(
             onPressed: () {
-              context.goNamed("home");
+              context.goNamed("student");
             },
             child: const Text("back"),
           ),

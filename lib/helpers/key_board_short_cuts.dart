@@ -16,8 +16,8 @@ class KeyBoardShortCuts extends StatelessWidget {
         keysToPress: {LogicalKeyboardKey.controlLeft, LogicalKeyboardKey.keyE},
         onKeysPressed: () => context.goNamed("employee"),
         child: KeyBoardShortcuts(
-          keysToPress: {LogicalKeyboardKey.controlLeft, LogicalKeyboardKey.keyH},
-          onKeysPressed: () => context.goNamed("home"),
+          keysToPress: {LogicalKeyboardKey.controlLeft, LogicalKeyboardKey.keyS},
+          onKeysPressed: () => context.goNamed("student"),
           child: child,
         ),
       ),

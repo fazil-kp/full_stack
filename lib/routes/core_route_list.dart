@@ -12,7 +12,7 @@ List<CoreRouteModel> staticRouteList = [
   const CoreRouteModel(id: 3, name: 'Home', routeName: '/home', widget: CustomScaffold()),
 ];
 List<CoreRouteModel> mainRouteList = [
-  const CoreRouteModel(id: 1, name: 'Home', routeName: 'home', widget: CustomScaffold(childWidget: StudentScreen())),
+  const CoreRouteModel(id: 1, name: 'Student', routeName: 'student', widget: CustomScaffold(childWidget: StudentScreen())),
   const CoreRouteModel(id: 2, name: 'Employee', routeName: 'employee', widget: CustomScaffold(childWidget: EmployeeScreen())),
   const CoreRouteModel(id: 2, name: 'Test Two', routeName: 'test-two', widget: CustomScaffold(childWidget: TestTwo())),
 ];

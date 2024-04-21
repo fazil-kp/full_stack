@@ -21,9 +21,7 @@ class StudentViewTable extends ConsumerWidget {
         children: [
           CustomTextField(
             hintText: "Search",
-            prefixIcon: Icon(Icons.search,
-                color:
-                    ColorCode.colorList(context).blackWhite?.withOpacity(.5)),
+            prefixIcon: Icon(Icons.search, color: ColorCode.colorList(context).blackWhite?.withOpacity(.5)),
             value: ref.read(studentVM).searchFilter,
             onChanged: (val) {
               ref.read(studentVM).searchFilter = val;
@@ -47,19 +45,12 @@ class StudentViewTable extends ConsumerWidget {
               ...ref.watch(studentVM).studentModelList.data.map(
                 (e) {
                   return DataRow2(
-                    color: WidgetStateProperty.resolveWith<Color?>(
-                        (Set<WidgetState> states) {
+                    color: WidgetStateProperty.resolveWith<Color?>((Set<WidgetState> states) {
                       if (states.contains(WidgetState.selected)) {
-                        return Theme.of(context)
-                            .colorScheme
-                            .primary
-                            .withOpacity(0.08);
+                        return Theme.of(context).colorScheme.primary.withOpacity(0.08);
                       }
                       if (e.id == ref.read(studentVM).studentModel.id) {
-                        return Theme.of(context)
-                            .colorScheme
-                            .primary
-                            .withOpacity(0.08);
+                        return Theme.of(context).colorScheme.primary.withOpacity(0.08);
                       }
                       return null;
                     }),
